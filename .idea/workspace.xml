@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="072e02db-12d9-4bca-b359-4e4d17c28a3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LABS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/MyFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/MyFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Lab1Fodor_KI306.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Lab1Fodor_KI306.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Звіт про виконання ЛР1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Звіт про виконання ЛР1.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/IPZ/LABS/Lab1"
+    "last_opened_file_path": "D:/KZP/LABS/Lab1",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

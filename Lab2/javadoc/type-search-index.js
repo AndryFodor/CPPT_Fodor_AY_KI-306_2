@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI306.Fodor.Lab2","l":"Pistol"},{"p":"KI306.Fodor.Lab2","l":"PistolApp"}];updateSearchResults();

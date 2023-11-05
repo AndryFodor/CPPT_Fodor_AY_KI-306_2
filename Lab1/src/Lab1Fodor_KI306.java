@@ -19,6 +19,7 @@ public class Lab1Fodor_KI306 {
     public static void main(String [] args) throws FileNotFoundException {
         char [][] arr;
         int SIZE;
+        char S = 'S';
         Scanner scanner = new Scanner(System.in);
         String symbol;
         File dataFile = new File("MyFile.txt");
@@ -37,8 +38,14 @@ public class Lab1Fodor_KI306 {
 
                 for (int i = 0; i < SIZE; i++){
                     for (int j = 0; j < SIZE; j++){
-                        if (i <= j) {
-                            arr[i][j-i] = (char) symbol.codePointAt(0);
+                        if(i % 2 == 0){
+                            if (i <= j) {
+                                arr[i][j-i] = S;
+                            }
+                        } else{
+                            if (i <= j) {
+                                arr[i][j-i] = (char) symbol.codePointAt(0);
+                            }
                         }
                     }
                 }
