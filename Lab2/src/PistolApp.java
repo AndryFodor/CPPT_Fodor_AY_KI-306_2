@@ -22,7 +22,7 @@ public class PistolApp {
         System.out.println("Now you have "+ p1.getGunsBulletCount() + " bullets");
         //Make 7 shoots at distance 10 m.
         System.out.println("-----Start shooting------");
-        p1.makeSomeShoots(7, 10);
+        p1.makeSomeShoots(15, 20);
         //Statistics
         System.out.println("Your accuracy is " + p1.getAccuracy());
         System.out.println("You have " + p1.getHitShoots() + " hit shoots");
