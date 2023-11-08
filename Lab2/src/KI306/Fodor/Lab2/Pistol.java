@@ -229,7 +229,7 @@ class Serviceability{
      * @param <code>model</code> specific model, mot random
      */
     public Serviceability(String model){
-        model = model;
+        this.model = model;
         serv = 100;
     }
 

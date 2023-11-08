@@ -1,18 +1,18 @@
 -----You started shooting-----
-You hit the target
-You hit the target
-You missed the target
-You missed the target
-You missed the target
-You missed the target
-You hit the target
 You missed the target
 You hit the target
 You missed the target
 You missed the target
-You hit the target
+You missed the target
 You hit the target
 You missed the target
+You hit the target
+You missed the target
+You missed the target
+You hit the target
+You missed the target
+You missed the target
+You hit the target
 You missed the target
 -----You have reloaded your gun-----
------You failed to repair your gun-----
+-----You have repaired your gun-----

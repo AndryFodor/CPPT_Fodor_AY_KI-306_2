@@ -1,0 +1,4 @@
+-----You started shooting-----
+You missed the target
+You missed the target
+You hit the target

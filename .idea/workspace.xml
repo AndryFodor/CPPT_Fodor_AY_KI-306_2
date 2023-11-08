@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="072e02db-12d9-4bca-b359-4e4d17c28a3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/MyFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/MyFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Lab1Fodor_KI306.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Lab1Fodor_KI306.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/Звіт про виконання ЛР1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Звіт про виконання ЛР1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/Log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/Log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +28,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/KZP/LABS/Lab1",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/KZP/LABS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
