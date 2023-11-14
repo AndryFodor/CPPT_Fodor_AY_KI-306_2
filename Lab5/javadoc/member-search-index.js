@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"KI306.Fodor.Lab5","c":"FileInputOutput","l":"FileInputOutput()","u":"%3Cinit%3E()"},{"p":"KI306.Fodor.Lab5","c":"FileInputOutput","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
