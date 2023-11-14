@@ -13,6 +13,8 @@ public class Pistol {
     private Serviceability serviceability;
     private Shooting shoot;
     private PrintWriter fout;
+    public static int countWithoutParam = 0;
+    public static int countWithParam = 0;
 
     /**
      * Constructor
@@ -24,6 +26,7 @@ public class Pistol {
         shoot = new Shooting();
 
         fout = new PrintWriter(new File("Log.txt"));
+        countWithoutParam++;
     }
     /**
      * Constructor
@@ -37,6 +40,7 @@ public class Pistol {
         shoot = new Shooting();
 
         fout = new PrintWriter(new File("Log.txt"));
+        countWithParam++;
     }
 
     /**

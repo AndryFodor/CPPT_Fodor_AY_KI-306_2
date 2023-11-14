@@ -16,6 +16,10 @@ public class PistolApp {
      */
     public static void main(String[] args) throws FileNotFoundException {
         Pistol p1 = new Pistol();
+        Pistol p2 = new Pistol();
+        Pistol p3 = new Pistol();
+        Pistol pp1 = new Pistol(3, "Model1");
+        Pistol pp2 = new Pistol(9, "Model2");
 
         //Representation
         System.out.println("Model of your pistol is "+ p1.getGunsModel());
@@ -37,6 +41,8 @@ public class PistolApp {
         p1.RepairGun(500);
         System.out.println("Your pistol serviceability is  " + p1.getGunsServiceability());
 
+        System.out.println("Without parameters = " + Pistol.countWithoutParam +
+                "\nWith parameters = " + Pistol.countWithParam);
         p1.dispose();
     }
 }

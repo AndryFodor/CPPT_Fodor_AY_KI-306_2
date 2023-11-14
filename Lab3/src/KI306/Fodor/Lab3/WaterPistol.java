@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 /**
  * Interface waterable describes the ability to use water shots
  */
-interface waterable {
+interface  waterable {
     String realizeWaterAble();
     boolean waterAble = true;
 }
