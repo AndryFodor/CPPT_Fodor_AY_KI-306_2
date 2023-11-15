@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI306.Lab6.Fodor","l":"GarbageCanDriver"}];updateSearchResults();

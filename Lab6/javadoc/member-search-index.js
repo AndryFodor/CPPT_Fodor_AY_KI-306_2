@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"KI306.Lab6.Fodor","c":"GarbageCanDriver","l":"GarbageCanDriver()","u":"%3Cinit%3E()"},{"p":"KI306.Lab6.Fodor","c":"GarbageCanDriver","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
