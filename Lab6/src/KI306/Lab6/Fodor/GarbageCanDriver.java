@@ -9,9 +9,9 @@ public class GarbageCanDriver{
         GarbageCan <? super Rubbish> garbageCan = new GarbageCan<Rubbish>();
         garbageCan.throwAwayGarbage(new GlassCan(30));
         garbageCan.throwAwayGarbage(new PaperCan(25));
-        garbageCan.throwAwayGarbage(new PlasticCan(40));
-        garbageCan.throwAwayGarbage(new PlasticCan(15));
-        garbageCan.throwAwayGarbage(new PlasticCan(10));
+        garbageCan.throwAwayGarbage(new PlasticCan<>(40));
+        garbageCan.throwAwayGarbage(new PlasticCan<>(15));
+        garbageCan.throwAwayGarbage(new PlasticCan<>(10));
         garbageCan.throwAwayGarbage(new PaperCan(5));
         System.out.println("---------------------------------------\nRECYCLING START\n*&^$&*#($*$&#*$($(*#");
         garbageCan.recycleRubbish();
@@ -33,6 +33,8 @@ public class GarbageCanDriver{
         }
         System.out.println("\n\n\nGarbage can state: ");
         garbageCan.getInfo();
+        PlasticCan <String, Integer> pc = new PlasticCan<>(20);
+        pc.print_data("Birth year", 2004);
     }
 }
 
@@ -329,7 +331,12 @@ class PaperCan implements Rubbish {
 /**
  * PlasticCan implements Rubbish interface and plastic garbage
  */
-class PlasticCan implements Rubbish {
+class PlasticCan<T1, T2> implements Rubbish, MyInterface<T1, T2>{
+    @Override
+    public void print_data(T1 data1, T2 data2) {
+        System.out.println("Data 1 = " + data1);
+        System.out.println("Data 2 = " + data2);
+        }
     private static int ID = 1;
     private final int id = ID;
     private final String rubbishName = "PLASTIC";

@@ -18,8 +18,8 @@ public class Lab1Fodor_KI306 {
      */
     public static void main(String [] args) throws FileNotFoundException {
         char [][] arr;
-        int SIZE;
-        char S = 'S';
+        int SIZE, iter = 0;
+        boolean ok = false;
         Scanner scanner = new Scanner(System.in);
         String symbol;
         File dataFile = new File("MyFile.txt");
@@ -38,30 +38,43 @@ public class Lab1Fodor_KI306 {
 
                 for (int i = 0; i < SIZE; i++){
                     for (int j = 0; j < SIZE; j++){
-                        if(i % 2 == 0){
-                            if (i <= j) {
-                                arr[i][j-i] = S;
-                            }
-                        } else{
-                            if (i <= j) {
-                                arr[i][j-i] = (char) symbol.codePointAt(0);
-                            }
+                        if (i <= j) {
+                            arr[i][j-i] = (char) symbol.codePointAt(0);
                         }
                     }
                 }
 //                Printing of matrix
                 for (int i = 0; i < SIZE; i++){
                     for (int j = 0; j < SIZE; j++){
-                        if(i <= j){
-                            System.out.print(arr[i][j-i] + " ");
-                            fout.print(arr[i][j-i] + " ");
-                        } else{
-                            System.out.print("  ");
-                            fout.print("  ");
+                        if(i < SIZE/2){
+                            if(i <= j){
+                                System.out.print(arr[i][j-i] + " ");
+                                fout.print(arr[i][j-i] + " ");
+                            } else{
+                                System.out.print("  ");
+                                fout.print("  ");
+                            }
+                        }else{
+                            if(i <= j){
+                                if (!ok){
+                                    for (int k = 0; k < iter;k++){
+                                        System.out.print("  ");
+                                        fout.print("  ");
+                                    }
+                                    ok = true;
+                                }
+                                System.out.print(arr[i][j-i] + " ");
+                                fout.print(arr[i][j-i] + " ");
+                            }
                         }
+
                     }
                     System.out.println();
                     fout.print("\n");
+                    if(i >= SIZE/2){
+                        iter++;
+                        ok = false;
+                    }
                 }
                 fout.flush();
                 fout.close();

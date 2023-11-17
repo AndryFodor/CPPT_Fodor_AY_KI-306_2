@@ -23,6 +23,7 @@ public class FileInputOutput {
         System.out.println("Result from binary file is: " + obj.getResult());
         obj.readResTxt("test1.txt");
         System.out.println("Result from test file is: " + obj.getResult());
+        System.out.println(obj.toString("test3.txt"));
     }
 }
 
@@ -35,6 +36,25 @@ class FileWorkAndCalc {
      * @param  <code>fName</code> is name of file for writing
      * @throws FileNotFoundException
      */
+    public String toString(String fileName){
+        String str = getClass().getName() + "@" + Integer.toHexString(hashCode());
+        try {
+            File file = new File(fileName);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(str);
+            bw.close();
+            fw.close();
+            return "Successful writing to file";
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "Writing to file was failed";
+        }
+    }
     public void writeResTxt(String fName) throws FileNotFoundException {
         PrintWriter f = new PrintWriter(fName);
         f.printf("%f ", result);
@@ -125,8 +145,6 @@ class FileWorkAndCalc {
  * This class is created to expand opportunities of ArithmeticException class
  */
 class CalcException extends ArithmeticException {
-    public CalcException(){}
-
     /**
      * This constructor get message, that specifies the exception problem
      * @param <code>cause</code> is text with exception problem

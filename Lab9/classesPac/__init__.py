@@ -1,0 +1,1 @@
+from .CWaterPistol import WaterPistol

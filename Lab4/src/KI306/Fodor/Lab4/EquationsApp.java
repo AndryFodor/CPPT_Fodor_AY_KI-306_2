@@ -31,7 +31,7 @@ public class EquationsApp {
                     fout.close();
                 }
             }
-            catch (CalcException ex) {
+            catch (CalcException | DividingByZeroException ex) {
                 out.print(ex.getMessage());
             }
         }
@@ -45,10 +45,18 @@ public class EquationsApp {
  * Class <code>CalcException</code> more precises ArithmeticException
  */
 class CalcException extends ArithmeticException {
-    public CalcException(){}
+//    public CalcException(){}
     public CalcException(String cause) {
         super(cause);
     }
+}
+
+class DividingByZeroException extends ArithmeticException {
+    DividingByZeroException(String cause){
+        super(cause);
+    }
+
+
 }
 /**
  * Class <code>Equations</code> implements method for y=sin(3x-5)/ctg(2x)expression * calculation
@@ -65,15 +73,18 @@ class Equations {
         try {
             y = 1/Math.tan(2*rad); // ctg(2x)
             y = Math.sin(3*rad-5)/y;
-            if (y==Double.NaN || y==Double.NEGATIVE_INFINITY || y==Double.POSITIVE_INFINITY || x==0 || x== 90)
-                throw new ArithmeticException();
+            if (y==Double.NaN || y==Double.NEGATIVE_INFINITY || y==Double.POSITIVE_INFINITY ||  x== 90)
+                throw new CalcException("");
+            else if(x==0)
+                throw new DividingByZeroException("");
         }
-        catch (ArithmeticException ex)
+        catch (CalcException | DividingByZeroException ex)
         {
-            if (rad==Math.PI/2.0 || rad==0.0)
+
+            if (rad==Math.PI/2.0)
                 throw new CalcException("Exception reason: Illegal value of X for cotangent calculation");
-            else if (Math.tan(2*rad) == 0 || 1/Math.tan(2*rad) == 0)
-                throw new CalcException("Exception reason: Division by 0");
+            else if (Math.tan(2*rad) == 0.0)
+                throw new DividingByZeroException("Exception reason: Division by zero");
             else
                 throw new CalcException("Unknown reason of the exception during exception calculation");
         }

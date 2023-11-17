@@ -1,3 +1,10 @@
-S S S 
-  к к 
-    S 
+t t t t t t t t t t 
+  t t t t t t t t t 
+    t t t t t t t t 
+      t t t t t t t 
+        t t t t t t 
+t t t t t 
+  t t t t 
+    t t t 
+      t t 
+        t 
